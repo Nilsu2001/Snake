@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SNAKE</title>
+    <script type="module" src="script.js"> </script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- website background -->
+    <video autoplay loop muted>
+        <source src="./Images/body.mp4" type="video/mp4">
+    </video>
+
+    <!-- player information -->
+    <div id="playerInformation">
+        <span id="playerName"></span>
+    </div>
+
+    <!-- canvas for the game -->
+    <canvas id="gameCanvas" width="700px" height="700px"></canvas>
+
+    <!-- menu -->
+    <div id="menu">
+        <button type="button" id="helpIcon">?</button>
+        <div id="menu-input">
+            <label for="playerInput">Enter Name</label>
+            <input type="text" name="playerInput" id="playerInput" maxlength="10" autofocus>
+            <button type="button" id="playButton"> PLAY </button>
+        </div>
+    </div>
+
+    <!-- rules -->
+    <div id="gameDescription">
+        <button id="closeIcon"></button>
+        <h1> How to play Snake </h1>
+        <p> Use WASD or the arrow keys to control the snake.</p>
+        <p> Collect cookies to score points.</p>
+        <p> Each collected cookie increases the speed and makes the snake grow.</p>
+        <p> If a snowball is collected, the speed decreases and the snake will shrink.</p>
+        <p> Be careful! The snowballs will change their position.</p>
+        <p> Moving the snake through the tunnel allows it to cross itself.</p>
+        <p> The game is over when the snake collides with itself or the edge of the playing area.</p>
+        <p> The snake will also die as soon as it is less than 3 parts long.</p>
+    </div>
+
+    <!-- game over -->
+    <div id="gameOver">
+        <p id="finalScore"></p>
+        <p id="gameOverFont">GAME OVER</p>
+        <button id="playAgainButton" onClick="window.location.reload();">Play Again
+        </button>
+    </div>
+
+</body>
+</html>

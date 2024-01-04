@@ -1,0 +1,234 @@
+ @import url('https://fonts.cdnfonts.com/css/common-pixel');
+
+
+/*html, body {margin: 0; height: 100%; overflow: hidden}*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 700px;
+    margin: auto;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#gameCanvas {
+    background-image: url("./Images/map.png");
+    background-size: contain;
+    z-index: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#playerInformation {
+    margin-top: 10px;
+    font-size: 35px;
+    font-family: 'Common Pixel', sans-serif;
+    color: #6181ad;
+    text-align: center;
+}
+
+#playerName {
+    padding-right: 50px;
+}
+
+#scoreImg {
+    margin: -3px;
+    padding-right: 9px;
+    width: 30px;
+    content: url("./Images/snowflake.png");
+}
+
+#gameDescription {
+    width: 700px;
+    height: 700px;
+    background-image: url("./Images/help.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 2;
+    position: absolute;
+    border-radius: 20px;
+    display: none;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Common Pixel', sans-serif;
+    color: #5178ad;
+    margin-left: 20px;
+}
+
+#gameDescription>p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #5178ad;
+    margin-left: 20px;
+}
+
+#closeIcon {
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-image: url("./Images/close.png");
+    background-size: contain;
+    cursor: pointer;
+}
+
+#menu {
+    width: 700px;
+    height: 700px;
+    background-image: url("./Images/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+    position: absolute;
+    border-radius: 20px;
+}
+
+#menu-input {
+    padding-top: 250px;
+    text-align: center;
+    /*color: #729ee0;*/
+    color: #5178ad;
+    font-size: 40px;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+#menu-input > label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#menu-input > input {
+    color: #90b0e0;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+    width: 300px;
+    background-color: whitesmoke;
+    text-align: center;
+    border: 0px solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px #6787b8;
+}
+
+#playButton {
+    padding-top: 30px;
+    margin: auto;
+    display: block;
+    font-size: 70px;
+    font-family: 'Common Pixel', sans-serif;
+    background: transparent;
+    color: #5178ad;
+    border: none;
+    cursor: pointer;
+}
+
+#playButton:hover {
+    color: #f2f6fa;
+    transform: scale(1.05);
+    text-shadow: 0px 0px 10px #dcebfa;
+}
+
+#helpIcon {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: block;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    background: transparent;
+    color: #6c8cb8;
+    border: none;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+}
+
+#helpIcon:hover {
+    color: #f2f6fa;
+    transform: scale(1.05);
+    text-shadow: 0px 0px 10px #dcebfa;
+}
+
+#gameOver {
+    position: relative;
+    z-index: 1;
+    background: black;
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(rgba(45, 73, 117,0.9), rgba(113, 145, 191,0.9));
+    text-align: center;
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+#gameOverFont {
+    padding-top: 20px;
+    font-size: 80px;
+    color: #e6f1fc;
+    text-shadow: 0px 0px 10px #dcebfa;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+
+#finalScore {
+    padding-top: 230px;
+    font-size: 40px;
+    color: #dcebfa;
+    text-shadow: 0px 0px 5px #dcebfa;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+#playAgainButton {
+    padding: 10px;
+    margin-top: 30px;
+    background: #779ad1;
+    border: none;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: 'Common Pixel', sans-serif;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+#playAgainButton:hover {
+    cursor: pointer;
+    color: #5b7eb5;
+    background: #c6dff7;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px white;
+}
+
+
+
+
+
