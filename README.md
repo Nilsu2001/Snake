@@ -9,7 +9,7 @@
 
 Das Ziel des Informatikprojekts “Snake” war es, ein funktionsfähiges Spiel anhand des MVC-Patterns und mittels der HTML5-Canvas-Technologie zu programmieren und kreativ umzusetzen.
 
-Mehr dazu in der Dokumentation: [Dokumentation.pdf](https://github.com/Nilsu2001/Snake/files/13834158/Dokumentation.pdf)
+Mehr dazu: [Dokumentation.pdf](https://github.com/Nilsu2001/Snake/files/13834158/Dokumentation.pdf)
 
 
 
